@@ -101,7 +101,7 @@ const styles: Record<string, CSSProperties> = {
 
 const LoginPopup: React.FC<LoginPopupProps> = ({ isOpen, setIsLoggedIn }) => {
   const [formData, setFormData] = useState<FormData>({
-    email: "abc@d.com",
+    email: "test@test.com",
     password: "",
   });
 
