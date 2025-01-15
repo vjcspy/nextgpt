@@ -1,8 +1,7 @@
 "use client";
 
-require("../polyfill");
-
-import { useState, useEffect } from "react";
+import SimpleLogin from "@/app/components/simple-login";
+import React, { useEffect, useState } from "react";
 import styles from "./home.module.scss";
 
 import BotIcon from "../icons/bot.svg";
@@ -18,8 +17,8 @@ import { getISOLang, getLang } from "../locales";
 
 import {
   HashRouter as Router,
-  Routes,
   Route,
+  Routes,
   useLocation,
 } from "react-router-dom";
 import { SideBar } from "./sidebar";
@@ -29,6 +28,8 @@ import { getClientConfig } from "../config/client";
 import { type ClientApi, getClientApi } from "../client/api";
 import { useAccessStore } from "../store";
 import clsx from "clsx";
+
+require("../polyfill");
 
 export function Loading(props: { noLogo?: boolean }) {
   return (
@@ -235,8 +236,14 @@ export function Home() {
     useAccessStore.getState().fetch();
   }, []);
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   if (!useHasHydrated()) {
     return <Loading />;
+  }
+
+  if (!isLoggedIn) {
+    return <SimpleLogin isOpen={!isLoggedIn} setIsLoggedIn={setIsLoggedIn} />;
   }
 
   return (
