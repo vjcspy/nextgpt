@@ -15,6 +15,7 @@ import { handle as siliconflowHandler } from "../../siliconflow";
 import { handle as xaiHandler } from "../../xai";
 import { handle as chatglmHandler } from "../../glm";
 import { handle as proxyHandler } from "../../proxy";
+import ulHandler from "@/app/api/ul";
 
 async function handle(
   req: NextRequest,
@@ -25,6 +26,8 @@ async function handle(
   switch (apiPath) {
     case ApiPath.Azure:
       return azureHandler(req, { params });
+    case "/api/vjcspy":
+      return ulHandler(req, { params });
     case ApiPath.Google:
       return googleHandler(req, { params });
     case ApiPath.Anthropic:
