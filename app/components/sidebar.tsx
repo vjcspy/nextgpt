@@ -4,7 +4,6 @@ import styles from "./home.module.scss";
 
 import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
-import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
 import AddIcon from "../icons/add.svg";
 import DeleteIcon from "../icons/delete.svg";
@@ -23,7 +22,6 @@ import {
   MIN_SIDEBAR_WIDTH,
   NARROW_SIDEBAR_WIDTH,
   Path,
-  REPO_URL,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -185,13 +183,13 @@ export function SideBarHeader(props: {
         })}
         data-tauri-drag-region
       >
-        <div className={styles["sidebar-title-container"]}>
-          <div className={styles["sidebar-title"]} data-tauri-drag-region>
-            {title}
-          </div>
-          <div className={styles["sidebar-sub-title"]}>{subTitle}</div>
-        </div>
-        <div className={clsx(styles["sidebar-logo"], "no-dark")}>{logo}</div>
+        {/*<div className={styles["sidebar-title-container"]}>*/}
+        {/*  <div className={styles["sidebar-title"]} data-tauri-drag-region>*/}
+        {/*    {title}*/}
+        {/*  </div>*/}
+        {/*  <div className={styles["sidebar-sub-title"]}>{subTitle}</div>*/}
+        {/*</div>*/}
+        {/*<div className={clsx(styles["sidebar-logo"], "no-dark")}>{logo}</div>*/}
       </div>
       {children}
     </Fragment>
@@ -336,15 +334,15 @@ export function SideBar(props: { className?: string }) {
                 />
               </Link>
             </div>
-            <div className={styles["sidebar-action"]}>
-              <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
-                <IconButton
-                  aria={Locale.Export.MessageFromChatGPT}
-                  icon={<GithubIcon />}
-                  shadow
-                />
-              </a>
-            </div>
+            {/*<div className={styles["sidebar-action"]}>*/}
+            {/*  <a href={REPO_URL} target="_blank" rel="noopener noreferrer">*/}
+            {/*    <IconButton*/}
+            {/*      aria={Locale.Export.MessageFromChatGPT}*/}
+            {/*      icon={<GithubIcon />}*/}
+            {/*      shadow*/}
+            {/*    />*/}
+            {/*  </a>*/}
+            {/*</div>*/}
           </>
         }
         secondaryAction={
