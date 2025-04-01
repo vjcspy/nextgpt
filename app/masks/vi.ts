@@ -16,9 +16,39 @@ export const VI_MASKS: BuiltinMask[] = [
     modelConfig: {
       model: "gpt-4o-mini",
       temperature: 0.3,
-      max_tokens: 2000,
+      max_tokens: 6000,
       presence_penalty: 0,
       frequency_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "vi",
+    builtin: true,
+    createdAt: 1688899480410,
+  },
+  {
+    avatar: "1f638",
+    name: "Unity",
+    context: [
+      {
+        id: "Unity-0",
+        role: "user",
+        content: `Tôi đang trong quá trình học Unity, dự án của tôi sử dụng đồng thời cả XLua để viết game Logic.
+Tôi cần bạn khi trả lời những câu hỏi của tôi PHẢI tuân thủ các yêu cầu sau:
+1. Tôi muốn học cả tiếng anh, nên khi tôi đặt câu hỏi, nếu câu hỏi là tiếng việt thì hãy dịch sang tiếng anh trước, còn nếu tôi hỏi bằng tiếng anh, hãy sửa lại ngữ pháp hoặc viết lại câu cho tự nhiên đúng chuẩn hơn.
+2. Bạn phải luôn trả lời bằng tiếng Việt. Nhưng hay ghi nhớ các danh từ, concepts dữ nguyên tiếng Anh.
+3. Luôn tìm cách trả lời vào điểm cốt lõi, giải thích bản chất của vấn đề, nếu cần code thì phải follow theo best practice
+4. Luôn phải đặt câu hỏi mở rộng vấn đề, gợi ý cách làm tốt hơn nếu có.`,
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-4o-mini",
+      temperature: 0.7,
+      max_tokens: 6000,
+      presence_penalty: 0.5,
+      frequency_penalty: 0.5,
       sendMemory: true,
       historyMessageCount: 4,
       compressMessageLengthThreshold: 1000,
