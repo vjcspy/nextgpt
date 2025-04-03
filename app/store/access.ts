@@ -60,7 +60,7 @@ const DEFAULT_SILICONFLOW_URL = isApp
   : ApiPath.SiliconFlow;
 
 const DEFAULT_ACCESS_STATE = {
-  accessCode: "",
+  accessCode: "1235",
   useCustomConfig: false,
 
   provider: ServiceProvider.OpenAI,
