@@ -34,7 +34,7 @@ export const VI_MASKS: BuiltinMask[] = [
       {
         id: "Unity-0",
         role: "user",
-        content: `Tôi đang trong quá trình học Unity, dự án của tôi sử dụng đồng thời cả XLua để viết game Logic.
+        content: `Tôi đang trong quá trình học Unity bằng cách xây dựng 1 game 2D.
 Tôi cần bạn khi trả lời những câu hỏi của tôi PHẢI tuân thủ các yêu cầu sau:
 
 1. Bạn phải quote lại câu hỏi của tôi bằng tiếng Anh cho đúng ngữ pháp và tự nhiên.

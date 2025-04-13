@@ -116,7 +116,7 @@ const LoginPopup: React.FC<LoginPopupProps> = ({ isOpen, setIsLoggedIn }) => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    if (formData.password == "1235") {
+    if (formData.password == "12311") {
       setIsLoggedIn(true);
     }
   };
