@@ -1,4 +1,4 @@
-import s3Client, { s3Region } from "@/app/lib/s3-client";
+import s3Client from "@/app/lib/s3-client";
 import { PutObjectCommand } from "@aws-sdk/client-s3";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -24,9 +24,9 @@ export default async function ulHandler(
 
     await s3Client.send(command);
 
-    const fileUrl = `https://${bucket}.s3.${s3Region}.amazonaws.com/${filename}`;
+    // const fileUrl = `https://${bucket}.s3.${s3Region}.amazonaws.com/${filename}`;
 
-    return NextResponse.json({ message: "Upload successful", url: fileUrl });
+    return NextResponse.json({ message: "nothing" });
   } catch (err: any) {
     console.error(err);
     return NextResponse.json(
