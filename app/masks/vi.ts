@@ -14,7 +14,7 @@ export const VI_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-4o-mini",
+      model: "gpt-5-mini",
       temperature: 0.3,
       max_tokens: 6000,
       presence_penalty: 0,
@@ -27,36 +27,36 @@ export const VI_MASKS: BuiltinMask[] = [
     builtin: true,
     createdAt: 1688899480410,
   },
-  {
-    avatar: "1f638",
-    name: "Unity",
-    context: [
-      {
-        id: "Unity-0",
-        role: "user",
-        content: `Tôi đang trong quá trình học Unity bằng cách xây dựng 1 game 2D.
-Tôi cần bạn khi trả lời những câu hỏi của tôi PHẢI tuân thủ các yêu cầu sau:
-
-1. Bạn phải quote lại câu hỏi của tôi bằng tiếng Anh cho đúng ngữ pháp và tự nhiên.
-2. Sau đó trả lời câu hỏi chính bằng tiếng Việt, nhưng giữ nguyên các thuật ngữ tiếng Anh.
-3. Tìm phương pháp cho đúng với Unity 6 (version mới nhất), giải thích cốt lõi vấn đề và cung cấp mã theo best practice. Đừng ngại mã dài vì tôi đang học và muốn theo chuẩn. 
-4. Đặt câu hỏi mở để khuyến khích thảo luận thêm.
-`,
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "chatgpt-4o-latest",
-      temperature: 0.7,
-      max_tokens: 6000,
-      presence_penalty: 0.4,
-      frequency_penalty: 0.4,
-      sendMemory: true,
-      historyMessageCount: 4,
-      compressMessageLengthThreshold: 1000,
-    },
-    lang: "vi",
-    builtin: true,
-    createdAt: 1688899480410,
-  },
+//   {
+//     avatar: "1f638",
+//     name: "Unity",
+//     context: [
+//       {
+//         id: "Unity-0",
+//         role: "user",
+//         content: `Tôi đang trong quá trình học Unity bằng cách xây dựng 1 game 2D.
+// Tôi cần bạn khi trả lời những câu hỏi của tôi PHẢI tuân thủ các yêu cầu sau:
+//
+// 1. Bạn phải quote lại câu hỏi của tôi bằng tiếng Anh cho đúng ngữ pháp và tự nhiên.
+// 2. Sau đó trả lời câu hỏi chính bằng tiếng Việt, nhưng giữ nguyên các thuật ngữ tiếng Anh.
+// 3. Tìm phương pháp cho đúng với Unity 6 (version mới nhất), giải thích cốt lõi vấn đề và cung cấp mã theo best practice. Đừng ngại mã dài vì tôi đang học và muốn theo chuẩn.
+// 4. Đặt câu hỏi mở để khuyến khích thảo luận thêm.
+// `,
+//         date: "",
+//       },
+//     ],
+//     modelConfig: {
+//       model: "gpt-5-mini",
+//       temperature: 0.7,
+//       max_tokens: 6000,
+//       presence_penalty: 0.4,
+//       frequency_penalty: 0.4,
+//       sendMemory: true,
+//       historyMessageCount: 4,
+//       compressMessageLengthThreshold: 1000,
+//     },
+//     lang: "vi",
+//     builtin: true,
+//     createdAt: 1688899480410,
+//   },
 ];
